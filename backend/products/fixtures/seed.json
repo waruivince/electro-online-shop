@@ -1,0 +1,122 @@
+[
+  {"model": "products.category", "pk": 1, "fields": {"name": "Cameras", "slug": "cameras"}},
+  {"model": "products.category", "pk": 2, "fields": {"name": "Headphones", "slug": "headphones"}},
+  {"model": "products.category", "pk": 3, "fields": {"name": "Earbuds", "slug": "earbuds"}},
+  {"model": "products.category", "pk": 4, "fields": {"name": "Phones", "slug": "phones"}},
+  {"model": "products.category", "pk": 5, "fields": {"name": "Laptops", "slug": "laptops"}},
+  {"model": "products.category", "pk": 6, "fields": {"name": "Wearables", "slug": "wearables"}},
+  {"model": "products.category", "pk": 7, "fields": {"name": "Speakers", "slug": "speakers"}},
+  {"model": "products.category", "pk": 8, "fields": {"name": "Accessories", "slug": "accessories"}},
+
+  {"model": "products.product", "pk": 1, "fields": {
+    "category": 1, "name": "OptiShot Z9 Camera", "slug": "optishot-z9-camera", "brand": "Optishot",
+    "description": "Full-frame mirrorless camera with a 33MP sensor, 8K video and fast autofocus for serious creators.",
+    "price": "232100.00", "image_url": "https://placehold.co/800x800.png?text=OptiShot+Z9",
+    "rating": "4.8", "review_count": 204, "stock": 7, "is_featured": true,
+    "specs": {"Sensor": "33MP Full Frame", "Video": "8K 30p", "Stabilization": "5-axis IBIS", "Mount": "Z-Mount"}}},
+
+  {"model": "products.product", "pk": 2, "fields": {
+    "category": 1, "name": "ProSnap DSLR M5", "slug": "prosnap-dslr-m5", "brand": "ProSnap",
+    "description": "Reliable DSLR with a 24MP sensor, 4K video, and a comfortable grip for enthusiasts stepping into photography.",
+    "price": "128900.00", "image_url": "https://placehold.co/800x800.png?text=ProSnap+DSLR+M5",
+    "rating": "4.5", "review_count": 371, "stock": 18, "is_featured": false,
+    "specs": {"Sensor": "24MP APS-C", "Video": "4K 60p", "Stabilization": "Digital", "Mount": "EF-Mount"}}},
+
+  {"model": "products.product", "pk": 3, "fields": {
+    "category": 2, "name": "Aurora Pro Wireless Headphones", "slug": "aurora-pro-wireless-headphones", "brand": "Aurora",
+    "description": "Over-ear wireless headphones with active noise cancellation and all-day comfort.",
+    "price": "44900.00", "image_url": "https://placehold.co/800x800.png?text=Aurora+Pro",
+    "rating": "4.8", "review_count": 1284, "stock": 40, "is_featured": true,
+    "specs": {"Type": "Over-ear", "Battery": "40 hours", "Noise cancelling": "Active", "Bluetooth": "5.3"}}},
+
+  {"model": "products.product", "pk": 4, "fields": {
+    "category": 2, "name": "Studio Beat Over-Ear", "slug": "studio-beat-over-ear", "brand": "Soundwave",
+    "description": "Lightweight over-ear headphones with rich, balanced sound for everyday listening.",
+    "price": "25700.00", "image_url": "https://placehold.co/800x800.png?text=Studio+Beat",
+    "rating": "4.6", "review_count": 642, "stock": 35, "is_featured": false,
+    "specs": {"Type": "Over-ear", "Battery": "30 hours", "Noise cancelling": "Passive", "Bluetooth": "5.2"}}},
+
+  {"model": "products.product", "pk": 5, "fields": {
+    "category": 3, "name": "Aurora Buds True Wireless", "slug": "aurora-buds-true-wireless", "brand": "Aurora",
+    "description": "Compact true wireless earbuds with a pocket-size charging case and clear calls.",
+    "price": "19200.00", "image_url": "https://placehold.co/800x800.png?text=Aurora+Buds",
+    "rating": "4.7", "review_count": 932, "stock": 60, "is_featured": true,
+    "specs": {"Battery": "8 hours (32 with case)", "Water resistance": "IPX4", "Bluetooth": "5.3", "Charging": "USB-C"}}},
+
+  {"model": "products.product", "pk": 6, "fields": {
+    "category": 4, "name": "Nova X15 Smartphone", "slug": "nova-x15-smartphone", "brand": "Nova",
+    "description": "Flagship smartphone with a triple camera system and a fast, bright display.",
+    "price": "115900.00", "image_url": "https://placehold.co/800x800.png?text=Nova+X15",
+    "rating": "4.7", "review_count": 2104, "stock": 25, "is_featured": true,
+    "specs": {"Display": "6.7-inch OLED", "Storage": "256GB", "RAM": "12GB", "Battery": "5000mAh"}}},
+
+  {"model": "products.product", "pk": 7, "fields": {
+    "category": 4, "name": "Lumen 12 Pro", "slug": "lumen-12-pro", "brand": "Lumen",
+    "description": "Slim smartphone with a smooth 120Hz screen and a camera that handles low light well.",
+    "price": "70800.00", "image_url": "https://placehold.co/800x800.png?text=Lumen+12+Pro",
+    "rating": "4.5", "review_count": 876, "stock": 30, "is_featured": false,
+    "specs": {"Display": "6.5-inch AMOLED", "Storage": "128GB", "RAM": "8GB", "Battery": "4500mAh"}}},
+
+  {"model": "products.product", "pk": 8, "fields": {
+    "category": 5, "name": "ZenBook Air 14", "slug": "zenbook-air-14", "brand": "Zentech",
+    "description": "Ultralight 14-inch laptop built for work on the move, with a sharp display and long battery life.",
+    "price": "167600.00", "image_url": "https://placehold.co/800x800.png?text=ZenBook+Air+14",
+    "rating": "4.8", "review_count": 540, "stock": 15, "is_featured": true,
+    "specs": {"Display": "14-inch FHD", "Processor": "8-core", "RAM": "16GB", "Storage": "512GB SSD"}}},
+
+  {"model": "products.product", "pk": 9, "fields": {
+    "category": 5, "name": "TitanBook Pro 16", "slug": "titanbook-pro-16", "brand": "Titantech",
+    "description": "Powerful 16-inch laptop for video editing, design and heavy multitasking.",
+    "price": "244900.00", "image_url": "https://placehold.co/800x800.png?text=TitanBook+Pro+16",
+    "rating": "4.6", "review_count": 318, "stock": 5, "is_featured": false,
+    "specs": {"Display": "16-inch 2.5K", "Processor": "12-core", "RAM": "32GB", "Storage": "1TB SSD"}}},
+
+  {"model": "products.product", "pk": 10, "fields": {
+    "category": 6, "name": "PulseFit Smartwatch", "slug": "pulsefit-smartwatch", "brand": "Pulse",
+    "description": "Smartwatch with heart-rate tracking, GPS and a bright always-on display.",
+    "price": "35900.00", "image_url": "https://placehold.co/800x800.png?text=PulseFit",
+    "rating": "4.6", "review_count": 765, "stock": 45, "is_featured": true,
+    "specs": {"Display": "1.8-inch AMOLED", "Battery": "7 days", "GPS": "Built-in", "Water resistance": "5 ATM"}}},
+
+  {"model": "products.product", "pk": 11, "fields": {
+    "category": 6, "name": "VueTime Watch 2", "slug": "vuetime-watch-2", "brand": "Vuetime",
+    "description": "Everyday smartwatch with activity tracking, sleep tracking and phone notifications.",
+    "price": "23100.00", "image_url": "https://placehold.co/800x800.png?text=VueTime+Watch+2",
+    "rating": "4.4", "review_count": 412, "stock": 38, "is_featured": false,
+    "specs": {"Display": "1.6-inch LCD", "Battery": "5 days", "Sensors": "Heart rate, SpO2", "Water resistance": "3 ATM"}}},
+
+  {"model": "products.product", "pk": 12, "fields": {
+    "category": 7, "name": "BoomBox Mini Speaker", "slug": "boombox-mini-speaker", "brand": "Aurora",
+    "description": "Pocket-size Bluetooth speaker with surprisingly full sound and a rugged body.",
+    "price": "16600.00", "image_url": "https://placehold.co/800x800.png?text=BoomBox+Mini",
+    "rating": "4.5", "review_count": 588, "stock": 50, "is_featured": false,
+    "specs": {"Battery": "12 hours", "Water resistance": "IPX7", "Bluetooth": "5.3", "Output": "10W"}}},
+
+  {"model": "products.product", "pk": 13, "fields": {
+    "category": 7, "name": "RetroWave FM Speaker", "slug": "retrowave-fm-speaker", "brand": "Retrowave",
+    "description": "Vintage-style portable speaker with a built-in FM radio and Bluetooth streaming.",
+    "price": "11500.00", "image_url": "https://placehold.co/800x800.png?text=RetroWave+FM",
+    "rating": "4.2", "review_count": 233, "stock": 22, "is_featured": false,
+    "specs": {"Radio": "FM", "Battery": "10 hours", "Bluetooth": "5.0", "Output": "8W"}}},
+
+  {"model": "products.product", "pk": 14, "fields": {
+    "category": 8, "name": "PowerPlus 20000 Power Bank", "slug": "powerplus-20000-power-bank", "brand": "PowerPlus",
+    "description": "High-capacity power bank that charges a phone several times over, with fast charging.",
+    "price": "5900.00", "image_url": "https://placehold.co/800x800.png?text=PowerPlus+20000",
+    "rating": "4.4", "review_count": 410, "stock": 80, "is_featured": false,
+    "specs": {"Capacity": "20000mAh", "Output": "22.5W", "Ports": "2x USB-A, 1x USB-C", "Weight": "420g"}}},
+
+  {"model": "products.product", "pk": 15, "fields": {
+    "category": 8, "name": "VoltEdge 65W USB-C Charger", "slug": "voltedge-65w-usb-c-charger", "brand": "VoltEdge",
+    "description": "Compact fast charger that powers a laptop and a phone at the same time.",
+    "price": "4500.00", "image_url": "https://placehold.co/800x800.png?text=VoltEdge+65W",
+    "rating": "4.6", "review_count": 289, "stock": 3, "is_featured": false,
+    "specs": {"Output": "65W", "Ports": "2x USB-C", "Technology": "GaN", "Cable": "Not included"}}},
+
+  {"model": "products.product", "pk": 16, "fields": {
+    "category": 8, "name": "ShieldFit Phone Case", "slug": "shieldfit-phone-case", "brand": "ShieldFit",
+    "description": "Slim protective case with raised edges and a soft-touch finish.",
+    "price": "1800.00", "image_url": "https://placehold.co/800x800.png?text=ShieldFit+Case",
+    "rating": "4.3", "review_count": 156, "stock": 120, "is_featured": false,
+    "specs": {"Material": "TPU", "Drop protection": "1.5m", "Wireless charging": "Compatible", "Fits": "Nova X15"}}}
+]
