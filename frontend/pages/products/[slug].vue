@@ -26,6 +26,10 @@ const stockLabel = computed(() => {
   if (stock <= 5) return `Only ${stock} left`
   return 'In stock'
 })
+
+const quantity = ref(1)
+const { add } = useCart()
+const addToCart = () => add(product.value, quantity.value)
 </script>
 
 <template>
@@ -66,6 +70,21 @@ const stockLabel = computed(() => {
         <p class="mt-1 text-sm" :class="product.stock <= 5 ? 'text-amber-600' : 'text-green-600'">
           {{ stockLabel }}
         </p>
+        <div class="mt-6 flex items-center gap-3">
+        <div class="flex items-center rounded-lg border">
+            <button type="button" aria-label="Decrease quantity" class="px-3 py-2" @click="quantity = Math.max(1, quantity - 1)">−</button>
+            <span class="w-8 text-center">{{ quantity }}</span>
+            <button type="button" aria-label="Increase quantity" class="px-3 py-2" @click="quantity = Math.min(product.stock, quantity + 1)">+</button>
+        </div>
+        <button
+            type="button"
+            class="flex-1 rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:bg-gray-300"
+            :disabled="product.stock === 0"
+            @click="addToCart"
+        >
+            Add to cart
+        </button>
+        </div>
       </div>
     </div>
   </div>
