@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiBase: 'https://electro-online-shop.onrender.com/api',
+      siteUrl: 'http://localhost:3000',
     },
   },
   app: {

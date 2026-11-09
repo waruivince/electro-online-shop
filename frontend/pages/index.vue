@@ -8,7 +8,7 @@ const { data: categories } = await useFetch<any[]>('/categories/', {
   baseURL: config.public.apiBase,
 })
 
-useSeoMeta({
+usePageSeo({
   title: 'Premium electronics at fair prices',
   description: 'Shop phones, laptops, headphones, cameras and more at VoltMart.',
 })
