@@ -16,17 +16,8 @@ useSeoMeta({
 
 <template>
   <div>
-    <nav class="mb-8 flex flex-wrap gap-2">
-      <NuxtLink to="/" class="rounded-full bg-blue-600 px-4 py-1.5 text-sm text-white">All</NuxtLink>
-      <NuxtLink
-        v-for="category in categories"
-        :key="category.id"
-        :to="`/category/${category.slug}`"
-        class="rounded-full border px-4 py-1.5 text-sm hover:bg-gray-50"
-      >
-        {{ category.name }}
-      </NuxtLink>
-    </nav>
+    
+    <CategoryNav :categories="categories" />
 
     <h1 class="mb-6 text-2xl font-bold">All products</h1>
 
