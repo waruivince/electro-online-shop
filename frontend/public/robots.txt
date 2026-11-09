@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-SITE.vercel.app/sitemap.xml
+Sitemap: https://electro-online-shop.vercel.app/sitemap.xml
