@@ -12,12 +12,54 @@ if (error.value || !product.value) {
 
 const description = product.value.description.slice(0, 155)
 
-useSeoMeta({
+// useSeoMeta({
+//   title: product.value.name,
+//   description,
+//   ogTitle: product.value.name,
+//   ogDescription: description,
+//   ogImage: product.value.image_url,
+// })
+
+const pageUrl = usePageSeo({
   title: product.value.name,
   description,
-  ogTitle: product.value.name,
-  ogDescription: description,
-  ogImage: product.value.image_url,
+  image: product.value.image_url,
+})
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: product.value.name,
+  image: [product.value.image_url],
+  description: product.value.description,
+  sku: String(product.value.id),
+  brand: { '@type': 'Brand', name: product.value.brand },
+  category: product.value.category.name,
+  offers: {
+    '@type': 'Offer',
+    url: pageUrl,
+    priceCurrency: 'KES',
+    price: product.value.price,
+    itemCondition: 'https://schema.org/NewCondition',
+    availability:
+      product.value.stock > 0 ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+  },
+  ...(product.value.review_count > 0 && {
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: product.value.rating,
+      reviewCount: product.value.review_count,
+    },
+  }),
+}
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+    },
+  ],
 })
 
 const stockLabel = computed(() => {

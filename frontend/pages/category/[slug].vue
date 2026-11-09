@@ -16,7 +16,7 @@ const { data: products } = await useFetch<any[]>('/products/', {
   query: { category: slug },
 })
 
-useSeoMeta({
+usePageSeo({
   title: category.name,
   description: `Shop ${category.name.toLowerCase()} at VoltMart.`,
 })
